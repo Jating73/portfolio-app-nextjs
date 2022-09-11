@@ -1,0 +1,582 @@
+/* CSS Variable Colors */
+:root {
+  --primary-color: #02203c;
+  --secondary-color: #001528;
+  --standout-color: #fff00b;
+}
+
+/* Navbar Starts */
+
+.brand-name {
+  font-family: "Oswald";
+  font-size: 2rem;
+  color: #fff;
+}
+
+.nav-items > a {
+  text-decoration: none;
+}
+
+.nav-item {
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-family: "Ubuntu";
+  text-decoration: none;
+}
+
+.px-10 {
+  padding-inline: 90px;
+}
+
+.navbar-bg {
+  background: linear-gradient(
+    -45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: #fff;
+  padding-inline: 20px;
+  padding-top: 20px;
+  justify-content: space-between;
+}
+
+.navbar-show .flex-new {
+  flex-direction: row;
+}
+
+/* Navbar Ends */
+
+/* Hero Section Begins */
+
+.herosection {
+  background: linear-gradient(
+    -90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 78%);
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.herosection-body {
+  padding-top: 60px;
+}
+
+.herosection-body .text-section {
+  padding-top: 52px;
+  text-align: center;
+}
+
+.herosection-body .main-text {
+  color: #fff;
+  font-weight: 700;
+  font-family: "Ubuntu";
+  font-size: 1.4rem;
+}
+
+.herosection-body .name-text {
+  color: var(--standout-color);
+  font-size: 28px;
+}
+
+.herosection-body .skill-text {
+  color: #fff;
+  font-size: 2.6rem;
+  font-family: sans-serif;
+}
+
+.herosection-body .subheading-text {
+  font-family: "Open sans";
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.herosection-body .btn-hire {
+  font-size: 1.3rem;
+  font-family: "Ubuntu";
+  color: #fff;
+  background: transparent;
+  border-radius: 25px;
+  margin-inline: 12px;
+  padding: 5px 40px;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+  animation: Anim 1s ease-in-out infinite;
+}
+
+.herosection-body .btn-hire:hover {
+  transform: translateY(-5px);
+  background-color: var(--standout-color);
+  color: #1c1c1c;
+}
+
+.herosection-body .btn-resume {
+  font-size: 1.3rem;
+  font-family: "Ubuntu";
+  color: #fff;
+  background: red;
+  border-radius: 25px;
+  margin-inline: 12px;
+  padding: 5px 40px;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+}
+
+.herosection-body .btn-resume:hover {
+  transform: translateY(-5px);
+}
+
+@keyframes Anim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.hero-img {
+  width: 300px;
+  object-fit: contain;
+  border-radius: 5%;
+  display: flex;
+  border: 1px solid white;
+  justify-content: center;
+}
+
+/* Hero Section Ends */
+
+/* About Section Begins */
+
+.about-me-section {
+  width: 70%;
+  margin-inline: auto;
+}
+
+.about-me-heading,
+.resume-heading,
+.testimonial-section > .heading,
+.contact-inner-part > .heading {
+  font-family: "Ubuntu";
+  font-weight: 800;
+  font-size: 3.5rem;
+  text-decoration: underline;
+  letter-spacing: 2px;
+}
+
+.about-me-sub-heading,
+.resume-sub-heading,
+.testimonial-section > .sub-heading,
+.contact-inner-part > .sub-heading {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  opacity: 0.8;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.about-me-text {
+  font-family: "Ubuntu";
+  font-weight: 600;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  text-align: justify;
+}
+
+.few-higlights {
+  font-family: "ubuntu";
+  padding-block: 12px;
+}
+
+.hightlight-text {
+  font-family: "Ubuntu";
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.highlight-list {
+  font-family: "Ubuntu";
+  font-size: 1.2rem;
+}
+
+/* About Section Ends */
+
+/* Resume Section Begins */
+
+.resume-section {
+  padding: 100px 0px;
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+  color: #fff;
+  clip-path: inset(0 0 0 0);
+}
+
+.resume-section .left {
+  background: white;
+}
+
+.resume-section > .row {
+  width: 70%;
+  margin-inline: auto;
+  background: linear-gradient(
+    -45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  box-shadow: 10px 10px 32px 2px #1c1c1c;
+}
+
+.resume-section .bg-new {
+  background: linear-gradient(
+    -45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: #fff;
+}
+
+.resume-option-items {
+  width: 1%;
+  transition: all 0.3s ease-in-out;
+  padding-block: 24px;
+  padding-inline: 24px;
+  color: #000;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.resume-option-items:hover {
+  width: 100%;
+  background: linear-gradient(
+    -90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: #fff;
+}
+
+.icon-span {
+  margin-block: 24px;
+  margin-inline: 24px;
+}
+
+.selected {
+  background: linear-gradient(
+    -45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  width: 100%;
+  color: #fff;
+}
+
+/* Resume Section Ends */
+
+/* Education Section Begins*/
+.education-section {
+  font-family: "Ubuntu";
+}
+
+.education-section .degree {
+  color: #1c1c1c;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.education-section .university {
+  font-weight: 800;
+  color: red;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.education-section .year-passed,
+.work-section .year-passed,
+.volunteer-section .year-passed {
+  font-family: monospace;
+  font-size: 1rem;
+  background: var(--standout-color);
+  color: #1c1c1c;
+  padding: 10px 10px;
+  border-radius: 20px;
+}
+
+/* Education Section Ends */
+
+/* Work Section Starts */
+
+.work-section {
+  font-family: "Ubuntu";
+}
+
+.work-section .company-name {
+  font-weight: 800;
+  color: red;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.work-section .position {
+  color: #1c1c1c;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.work-section .description {
+  color: #1c1c1c;
+}
+
+/* Work Section Ends */
+
+/* Programming Starts */
+.programming-section .language {
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  color: #1c1c1c;
+}
+
+.programming-section .progress-bar {
+  background: red;
+  height: 20px;
+  width: 200px;
+}
+
+.programming-section .progress-made {
+  background: #1c1c1c;
+  height: 20px;
+}
+
+/* Programming Ends */
+
+/* Project Starts */
+
+.project-section {
+  font-family: "Ubuntu";
+}
+
+.project-section .project-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: red;
+  text-transform: uppercase;
+}
+
+.project-section .fa-circle {
+  font-size: 0.7rem;
+}
+
+.project-section .project-tech {
+  color: #1c1c1c;
+}
+
+/* Project Ends */
+
+/* Volunteer Section Starts */
+
+.volunteer-section {
+  font-family: "Ubuntu";
+}
+
+.volunteer-section .company-name {
+  font-weight: 800;
+  color: red;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.volunteer-section .position {
+  color: #1c1c1c;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.volunteer-section .description {
+  color: #1c1c1c;
+}
+
+/* Volunteer Section Ends */
+
+/* Testimonials Starts */
+
+.testimonial-section .testimonial-card {
+  border-radius: 50px 20px 50px 0px;
+  padding: 24px;
+  width: 98%;
+  text-align: justify;
+}
+
+.testimonial-section .description {
+  font-family: "Ubuntu";
+  font-weight: 700;
+}
+
+/* Testimonial Ends */
+
+/* Contact Starts */
+
+.contact-section {
+  color: #fff;
+}
+
+.contact-inner-part {
+  padding-top: 100px;
+}
+
+.contact-inner-part > .row {
+  background: #1c1c1c;
+  width: 80%;
+  margin-inline: auto;
+  box-shadow: 10px 10px 63px 4px rgb(243, 243, 240);
+  height: 500px;
+}
+
+.get-in-touch {
+  font-family: "Ubuntu";
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.contact-section .relative-bg {
+  position: absolute;
+  clip-path: polygon(0 5%, 100% 14%, 100% 80%, 0% 96%);
+  background: linear-gradient(
+    -90deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  height: 100%;
+  width: 100%;
+  z-index: -4;
+}
+
+.contact-inner-part .input-group {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.contact-inner-part .right {
+  border-radius: 20px;
+  width: 90%;
+  margin-inline: auto;
+  padding: 24px;
+  background: rgb(0, 7, 61);
+  box-shadow: 10px 3px 33px 4px rgb(243, 243, 240);
+}
+
+/* Contact Ends */
+
+/* Responsiveness Starts */
+@media all and (max-width: 786px) {
+  .hamburger-menu {
+    height: 4px;
+    width: 40px;
+    background: #fff;
+    float: right;
+    z-index: 33;
+    transform: translateX(55px) translateY(20px);
+  }
+
+  .hamburger-menu::before {
+    display: block;
+    position: relative;
+    top: 9px;
+    content: "";
+    height: 4px;
+    width: 40px;
+    background: #fff;
+    float: right;
+    z-index: 33;
+  }
+
+  .hamburger-menu::after {
+    display: block;
+    position: relative;
+    bottom: 12px;
+    content: "";
+    height: 4px;
+    width: 40px;
+    background: #fff;
+    float: right;
+    z-index: 33;
+  }
+
+  .brand-name {
+    font-size: 1.4rem;
+    padding-inline: 22px;
+  }
+
+  .navbar-show .flex-new .nav-item {
+    padding-block: 20px;
+  }
+
+  .transition-all {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .herosection-body .main-text {
+    font-size: 1.2rem;
+  }
+
+  .herosection-body .name-text {
+    font-size: 20px;
+  }
+
+  .herosection-body .skill-text {
+    font-size: 2rem;
+  }
+
+  .herosection-body .subheading-text {
+    font-size: 1.2rem;
+  }
+
+  .herosection-body .btn-resume {
+    font-size: 1rem;
+    padding: 5px 8px;
+  }
+
+  .herosection-body .btn-hire {
+    font-size: 1rem;
+    padding: 5px 8px;
+  }
+
+  .about-me-section {
+    width: 90%;
+  }
+
+  .resume-section > .row {
+    width: 90%;
+  }
+
+  .education-section .university,
+  .work-section .company-name,
+  .project-section .project-name,
+  .volunteer-section .company-name {
+    font-size: 1rem;
+  }
+
+  .education-section .degree,
+  .work-section .position,
+  .project-section .project-tech,
+  .volunteer-section .position {
+    font-size: 0.9rem;
+  }
+
+  .contact-inner-part > .row {
+    width: 95%;
+  }
+
+  .contact-inner-part .right {
+    width: 100%;
+    box-shadow: 3px 5px 20px 4px rgb(243 243 240);
+  }
+}
