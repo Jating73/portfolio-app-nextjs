@@ -108,7 +108,7 @@
 
 .herosection-body .btn-hire:hover {
   transform: translateY(-5px);
-  background-color: var(--standout-color);
+  background-color: var(--standout-color) !important;
   color: #1c1c1c;
 }
 
@@ -149,6 +149,14 @@
   display: flex;
   border: 1px solid white;
   justify-content: center;
+}
+
+.social-list {
+  margin-top: 2rem;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0%, 0%, 0%, 40%);
 }
 
 /* Hero Section Ends */

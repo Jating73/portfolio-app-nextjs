@@ -1,7 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import Typed from "typed.js";
 import Image from "next/image";
-// import heroImg from '../assets/hero-image.png';
+import Nav from "react-bootstrap/Nav";
+import { SocialIcon } from "react-social-icons";
 
 function HeroSection() {
   const element = useRef();
@@ -52,6 +53,55 @@ function HeroSection() {
               >
                 Get Resume
               </a>
+            </div>
+            <div className="social-list">
+              <Nav
+                style={{ justifyContent: "space-evenly", padding: "12px 0px" }}
+              >
+                <Nav.Item>
+                  <SocialIcon
+                    network="email"
+                    url="mailto:jatingambhir22@gmail.com"
+                    target="blank"
+                    fgColor="white"
+                  />
+                </Nav.Item>
+                <Nav.Item>
+                  <SocialIcon
+                    url="https://github.com/Jating73"
+                    target="blank"
+                    fgColor="white"
+                  />
+                </Nav.Item>
+                <Nav.Item>
+                  <SocialIcon
+                    url="https://www.facebook.com/jatin.gambhir.1671"
+                    target="blank"
+                    fgColor="white"
+                  />
+                </Nav.Item>
+                <Nav.Item>
+                  <SocialIcon
+                    url="https://www.linkedin.com/in/jatin-gambhir-990193175/"
+                    target="blank"
+                    fgColor="white"
+                  />
+                </Nav.Item>
+                <Nav.Item>
+                  <SocialIcon
+                    url="https://www.instagram.com/jating73/"
+                    target="blank"
+                    fgColor="white"
+                  />
+                </Nav.Item>
+                <Nav.Item>
+                  <SocialIcon
+                    url="https://twitter.com/JatinGambhir7"
+                    target="blank"
+                    fgColor="white"
+                  />
+                </Nav.Item>
+              </Nav>
             </div>
           </div>
         </div>

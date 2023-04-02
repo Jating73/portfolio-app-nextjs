@@ -14,8 +14,6 @@ function Resume(props) {
   const [showSkill, setShowSkill] = useState(false);
   const [showVolunteer, setShowVolunteer] = useState(false);
 
-  const [hostedProjects, setHostedProjects] = useState([]);
-
   function setAllFalse() {
     setShowEducation(false);
     setShowWork(false);
@@ -28,25 +26,6 @@ function Resume(props) {
     setAllFalse();
     functionName(value);
   }
-
-  //   useEffect(() => {
-  //     const url =
-  //       BACKEND.BASE_URL +
-  //       BACKEND.API_V1 +
-  //       BACKEND.PROJECT_ENDPOINT.PROJECT +
-  //       BACKEND.PROJECT_ENDPOINT.HOSTED_PROJECTS;
-
-  //     fetch(url)
-  //       .then((response) => {
-  //         return response.json();
-  //       })
-  //       .then((response) => {
-  //         const output = response.data.filter((project) => {
-  //           return project.id != EXCLUDE_PROJECT_IDS;
-  //         });
-  //         setHostedProjects(output);
-  //       });
-  //   }, []);
 
   return (
     <div className="resume-section d-flex flex-column" id="resume">
@@ -88,7 +67,9 @@ function Resume(props) {
             </span>
             <span
               className={
-                showWork ? "resume-option-items selected" : "resume-option-items"
+                showWork
+                  ? "resume-option-items selected"
+                  : "resume-option-items"
               }
               onClick={() => {
                 changeState(setShowWork, true);
@@ -138,9 +119,7 @@ function Resume(props) {
           {showEducation && <Education educations={educations} />}
           {showWork && <Work works={works} />}
           {showSkill && <Programming skills={skills} />}
-          {showProject && (
-            <Projects projects={projects} hosted_projects={hostedProjects} />
-          )}
+          {showProject && <Projects projects={projects} />}
           {showVolunteer && <Volunteer volunteers={volunteers} />}
         </div>
       </div>
