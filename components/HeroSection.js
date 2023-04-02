@@ -49,6 +49,7 @@ function HeroSection() {
               <a
                 className="btn btn-resume"
                 target="_blank"
+                rel="noreferrer"
                 href="https://res.cloudinary.com/instac/image/upload/v1657856215/resume/Jatin-Gambhir-Resume_h9jcfw.pdf"
               >
                 Get Resume
