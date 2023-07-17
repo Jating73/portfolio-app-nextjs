@@ -54,7 +54,7 @@ const WORK_DETAILS = [
     position: "Associate Software Engineer",
     start_month: "July",
     start_year: "2021",
-    end_month: "2022",
+    end_month: "September",
     end_year: "2022",
     descriptions: [
       "Develop and maintain Backend for apps and web panels",
