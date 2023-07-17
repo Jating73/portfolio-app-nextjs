@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 function Work({ works }) {
@@ -6,7 +7,12 @@ function Work({ works }) {
       <div className="work-section my-4" key={work.id}>
         <div className="d-flex flex-column ">
           <div className="d-flex flex-row justify-content-between">
-            <span className="company-name">{work.company_name}</span>
+            <a href={work.company_url} style={{ textDecoration: "none" }}>
+              <span className="company-name">
+                {/* <Image style={{ background: "#000" }} className="" width={200} height={100} src={"/images/companies/" + work.company_logo} /> */}
+                {work.company_name}
+              </span>
+            </a>
             <span className="year-passed">
               {work.start_month} {work.start_year} - {work.end_month}{" "}
               {work.end_year}
@@ -23,7 +29,7 @@ function Work({ works }) {
             </ul>
           </span>
         </div>
-      </div>
+      </div >
     );
   });
 }
